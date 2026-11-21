@@ -1,0 +1,88 @@
+services:
+  # ============================================================================
+  # 1. CEDIS GÓMEZ PALACIO (NODO CENTRAL CORPORATIVO - FDW HUB)
+  # ============================================================================
+  db_cedis:
+    image: postgres:16-alpine
+    container_name: estiren_db_cedis
+    restart: always
+    environment:
+      POSTGRES_DB: estiren_cedis
+      POSTGRES_USER: estiren_admin
+      POSTGRES_PASSWORD: estiren_secret_password_2026
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./docker/init/cedis:/docker-entrypoint-initdb.d
+      - estiren_data_cedis:/var/lib/postgresql/data
+    networks:
+      - estiren_network
+
+  # ============================================================================
+  # 2. SUCURSAL TORREÓN (COAHUILA)
+  # ============================================================================
+  db_torreon:
+    image: postgres:16-alpine
+    container_name: estiren_db_torreon
+    restart: always
+    environment:
+      POSTGRES_DB: estiren_torreon
+      POSTGRES_USER: estiren_admin
+      POSTGRES_PASSWORD: estiren_secret_password_2026
+    ports:
+      - "5434:5432"
+    volumes:
+      - ./docker/init/torreon:/docker-entrypoint-initdb.d
+      - estiren_data_torreon:/var/lib/postgresql/data
+    networks:
+      - estiren_network
+
+  # ============================================================================
+  # 3. SUCURSAL VILLA JUÁREZ (DURANGO)
+  # ============================================================================
+  db_juarez:
+    image: postgres:16-alpine
+    container_name: estiren_db_juarez
+    restart: always
+    environment:
+      POSTGRES_DB: estiren_juarez
+      POSTGRES_USER: estiren_admin
+      POSTGRES_PASSWORD: estiren_secret_password_2026
+    ports:
+      - "5435:5432"
+    volumes:
+      - ./docker/init/juarez:/docker-entrypoint-initdb.d
+      - estiren_data_juarez:/var/lib/postgresql/data
+    networks:
+      - estiren_network
+
+  # ============================================================================
+  # 4. SUCURSAL LERDO (DURANGO)
+  # ============================================================================
+  db_lerdo:
+    image: postgres:16-alpine
+    container_name: estiren_db_lerdo
+    restart: always
+    environment:
+      POSTGRES_DB: estiren_lerdo
+      POSTGRES_USER: estiren_admin
+      POSTGRES_PASSWORD: estiren_secret_password_2026
+    ports:
+      - "5436:5432"
+    volumes:
+      - ./docker/init/lerdo:/docker-entrypoint-initdb.d
+      - estiren_data_lerdo:/var/lib/postgresql/data
+    networks:
+      - estiren_network
+
+networks:
+  estiren_network:
+    name: estiren_network
+    driver: bridge
+
+volumes:
+  estiren_data_cedis:
+  estiren_data_torreon:
+  estiren_data_juarez:
+  estiren_data_lerdo:
+

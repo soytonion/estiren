@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --steren-blue: #0077c8;
+  --steren-blue-dark: #005a9c;
+  --steren-blue-deep: #002b4d;
+  --steren-blue-light: #f0f8ff;
+}
+
+.bg-steren {
+  background-color: #0077c8 !important;
+}
+
+.bg-steren-dark {
+  background-color: #005a9c !important;
+}
+
+.bg-steren-800 {
+  background-color: #004275 !important;
+}
+
+.bg-steren-900 {
+  background-color: #002b4d !important;
+}
+
+.bg-steren-50 {
+  background-color: #f0f8ff !important;
+}
+
+.bg-steren-100 {
+  background-color: #e0f1fe !important;
+}
+
+.text-steren {
+  color: #0077c8 !important;
+}
+
+.text-steren-dark {
+  color: #005a9c !important;
+}
+
+.text-steren-900 {
+  color: #002b4d !important;
+}
+
+.border-steren {
+  border-color: #0077c8 !important;
+}
+
+.border-steren-200 {
+  border-color: #bae3fd !important;
+}
+
+.border-steren-800 {
+  border-color: #004275 !important;
+}
+
+/* Scrollbar sutil */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
