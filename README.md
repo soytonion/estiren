@@ -33,10 +33,10 @@ Aplicación web desarrollada con **Next.js 15**, **TypeScript**, **Tailwind CSS*
 
 | Rol | Nombre | Correo | Contraseña | Vista asignada |
 | :--- | :--- | :--- | :--- | :--- |
-| 🛡️ **Administrador** | Ing. Carlos Mendoza | `admin@estiren.mx` | `admin123` | **Panel de Control y Operaciones (CEDIS)** |
-| 👤 **Cliente 1** | Juan Pérez Lagunero | `juan.perez@comarca.mx` | `cliente123` | **Tienda en Línea y Carrito (Suc. Torreón)** |
-| 👤 **Cliente 2** | Roberto Gómez Juárez | `roberto.gomez@villa.mx` | `cliente123` | **Tienda en Línea y Carrito (Suc. Villa Juárez)** |
-| 👤 **Cliente 3** | Mariana López Lerdo | `mariana.lopez@lerdo.mx` | `cliente123` | **Tienda en Línea y Carrito (Suc. Lerdo)** |
+| **Administrador** | Ing. Carlos Mendoza | `admin@estiren.mx` | `admin123` | **Panel de Control y Operaciones (CEDIS)** |
+| **Cliente 1** | Juan Pérez Lagunero | `juan.perez@comarca.mx` | `cliente123` | **Tienda en Línea y Carrito (Suc. Torreón)** |
+| **Cliente 2** | Roberto Gómez Juárez | `roberto.gomez@villa.mx` | `cliente123` | **Tienda en Línea y Carrito (Suc. Villa Juárez)** |
+| **Cliente 3** | Mariana López Lerdo | `mariana.lopez@lerdo.mx` | `cliente123` | **Tienda en Línea y Carrito (Suc. Lerdo)** |
 
 ---
 
@@ -44,10 +44,10 @@ Aplicación web desarrollada con **Next.js 15**, **TypeScript**, **Tailwind CSS*
 
 | Nodo / Sucursal | Host | Puerto | Base de Datos | Usuario | Contraseña |
 | :--- | :--- | :---: | :--- | :--- | :--- |
-| 🏢 **CEDIS Gómez Palacio** | `localhost` | `5433` | `estiren_cedis` | `estiren_admin` | `estiren_secret_password_2026` |
-| 🏬 **Sucursal Torreón** | `localhost` | `5434` | `estiren_torreon` | `estiren_admin` | `estiren_secret_password_2026` |
-| 🏬 **Sucursal Villa Juárez** | `localhost` | `5435` | `estiren_juarez` | `estiren_admin` | `estiren_secret_password_2026` |
-| 🏬 **Sucursal Lerdo** | `localhost` | `5436` | `estiren_lerdo` | `estiren_admin` | `estiren_secret_password_2026` |
+| **CEDIS Gómez Palacio** | `localhost` | `5433` | `estiren_cedis` | `estiren_admin` | `estiren_secret_password_2026` |
+| **Sucursal Torreón** | `localhost` | `5434` | `estiren_torreon` | `estiren_admin` | `estiren_secret_password_2026` |
+| **Sucursal Villa Juárez** | `localhost` | `5435` | `estiren_juarez` | `estiren_admin` | `estiren_secret_password_2026` |
+| **Sucursal Lerdo** | `localhost` | `5436` | `estiren_lerdo` | `estiren_admin` | `estiren_secret_password_2026` |
 
 Para ver los Diagramas Entidad-Relación (ERD) detallados, consulta [`DIAGRAMAS_ER_Y_CONEXIONES.md`](./DIAGRAMAS_ER_Y_CONEXIONES.md).
 
