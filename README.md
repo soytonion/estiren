@@ -1,10 +1,10 @@
-# ⚡ Estiren — E-Commerce y Sistema de Operaciones Multi-Sucursal
+# Estiren — E-Commerce y Sistema de Operaciones Multi-Sucursal
 
 Aplicación web desarrollada con **Next.js 15**, **TypeScript**, **Tailwind CSS** y **4 bases de datos PostgreSQL 16** en Docker conectadas mediante **Tablas Federadas (`postgres_fdw`)**.
 
 ---
 
-## 🚀 Cómo levantar el proyecto desde cero
+## Cómo levantar el proyecto desde cero
 
 1. **Iniciar los 4 contenedores de PostgreSQL en Docker:**
    ```bash
@@ -29,7 +29,7 @@ Aplicación web desarrollada con **Next.js 15**, **TypeScript**, **Tailwind CSS*
 
 ---
 
-## 🔐 Cuentas de Acceso en la Aplicación
+## Cuentas de Acceso en la Aplicación
 
 | Rol | Nombre | Correo | Contraseña | Vista asignada |
 | :--- | :--- | :--- | :--- | :--- |
@@ -40,7 +40,7 @@ Aplicación web desarrollada con **Next.js 15**, **TypeScript**, **Tailwind CSS*
 
 ---
 
-## 🗄️ Conexiones a las 4 Bases de Datos (DBeaver / pgAdmin 4)
+## Conexiones a las 4 Bases de Datos (DBeaver / pgAdmin 4)
 
 | Nodo / Sucursal | Host | Puerto | Base de Datos | Usuario | Contraseña |
 | :--- | :--- | :---: | :--- | :--- | :--- |
@@ -53,7 +53,7 @@ Para ver los Diagramas Entidad-Relación (ERD) detallados, consulta [`DIAGRAMAS_
 
 ---
 
-## 🌐 Cómo correr cada Base de Datos en PCs diferente (Modo Multi-PC en Red LAN / VPN)
+## Cómo correr cada Base de Datos en PCs diferente (Modo Multi-PC en Red LAN / VPN)
 
 El sistema soporta correr las 4 bases de datos en una sola computadora (`localhost`) o distribuirlas en **hasta 4 computadoras distintas** conectadas a la misma red Wi-Fi / LAN o mediante VPN (Tailscale / Radmin VPN / ZeroTier):
 
